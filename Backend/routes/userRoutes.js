@@ -238,6 +238,8 @@ router.get("/sp/bookings/:email", async (req, res) => {
           paymentStatus: booking.paymentStatus,
           amount: booking.amount,
           total_amount: booking.total_amount,
+          date: booking.date,
+          time: booking.time,
           createdAt: booking.createdAt,
           orderId: booking.orderId,
           refundedAmount: booking.refundedAmount,
